@@ -213,7 +213,7 @@ function combinarNombres(nombre, apellido) {
   // Tu código:
   nombre ="kevin"
   apellido = " borjas"
- return console.log(nombre+" "+" "+apellido)
+ return nombre+" "+apellido
 }
 
 function obtenerSaludo(nombre) {
@@ -221,14 +221,14 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   var nombre="martin"
- return console.log("hola "+nombre+"!")
+ return "hola "+nombre+"!"
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   area=(alto*ancho);
-  return console.log(area) 
+  return area 
 }
 
 
@@ -236,7 +236,7 @@ function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
   perimetro=4*lado;
-  return console.log(perimetro)
+  return perimetro
 }
 
 
@@ -244,7 +244,7 @@ function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
  area=((base*altura)/2)
- return console.log(area)
+ return area
 }
 
 
@@ -253,7 +253,7 @@ function deEuroAdolar(euro){
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
   dolares=(1/1.2)*euro
-  return console.log(dolares)
+  return dolares
 }
 
 
@@ -263,8 +263,8 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if letra == "a" || letra== "e" || letra == "i" || letra == "o" || letra== "u"
-    return console.log("es una vocal, dato incorrecto")
+  if (letra == "a" || letra== "e" || letra == "i" || letra == "o" || letra== "u")
+    return "es una vocal, dato incorrecto"
     
   tamaño =letra.length;
   if tamaño > 1;
