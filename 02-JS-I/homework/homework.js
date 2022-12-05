@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 4.2;
 function devolverString(str) {
   // Return la string provista: str
   // Tu código:  
-  return console.log("la string provista: " +str)
+  return str;
   
 }
 
@@ -37,14 +37,14 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
    c= ( x+y )
-   return console.log(c) 
+   return c 
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   c = (x - y)
-  return console.log(c)
+  return (c);
   
 }
 
@@ -52,14 +52,14 @@ function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
   c = (x * y)
-  return console.log(c)
+  return (c);
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
   c = (x / y)
-  return console.log(c)
+  return (c);
 }
 
 function sonIguales(x, y) {
@@ -68,9 +68,9 @@ function sonIguales(x, y) {
   // Tu código:
     
   if (x == y) {
-    return console.log("true")
+    return true
   } else {
-    return console.log("false")
+    return false
   } 
     
   
@@ -82,10 +82,10 @@ function tienenMismaLongitud(str1, str2) {
   // Tu código:
    cantidad1= str1.length;
    cantidad2= str2.length;
-   if (cantidad1=cantidad2)
-   {return "true"
+   if (cantidad1=== cantidad2)
+   {return true;
   }else {
-    return "false"
+    return false;
   }
     
     
@@ -96,10 +96,10 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num < 90){
-    return "true"
+    return true
 }
   else{
-    return "false"
+    return false
 }
 
 }
@@ -109,10 +109,10 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num < 50){
-    console.log("true");
+    return false
 
   }else{
-    console.log("false");
+    return true
   }
 }
 
@@ -127,8 +127,9 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if((num%2)==0){
-    console.log("true");
-  }else{console.log("false");
+    true
+    ;
+  }else{false;
     }
 }
 
@@ -137,8 +138,8 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if((num%2)!=0){
-    console.log("true");
-  }else{console.log("false");
+    return true;
+  }else{false;
     }
 }
 
@@ -147,39 +148,39 @@ function elevarAlCuadrado(num) {
   // ojo: No es raiz cuadrada!
   // Tu código:
   num2=num*num
-  return console.log(num2) 
-  return console.log(Math.pow(num,2))
+  return num2 
+  return Math.pow(num,2);
 }
 
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return console.log(Math.pow(num,3))
+  return Math.pow(num,3)
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return console.log(Math.pow(num,exponent))
+  return Math.pow(num,exponent)
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return console.log(Math.round(num))
+  return Math.round(num)
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return console.log(Math.ceil(num))
+  return Math.ceil(num)
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return console.log(Math.random(num))
+  return Math.random(num)
 }
 
 function esPositivo(numero) {
@@ -189,11 +190,11 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   numero1=Math.trunc(numero)
   if (numero1>0){
-    return console.log("es positivo")
+    return ("es positivo")
   if (numero<0) {
-    return console.log("es negativo")
+    return ("es negativo")
     }else{
-    return console("es false")
+    return false
   }
   }
 }
@@ -203,7 +204,7 @@ function agregarSimboloExclamacion(str) {
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
  str="hello world"
- return console.log(str+"!")
+ return str+"!"
 }
 
 function combinarNombres(nombre, apellido) {
