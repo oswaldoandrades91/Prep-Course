@@ -263,13 +263,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra == "a" || letra== "e" || letra == "i" || letra == "o" || letra== "u")
-    return "es una vocal, dato incorrecto"
+  if (letra == "a" || letra== "e" || letra == "i" || letra == "o" || letra== "u"){
+    return "es una vocal, dato incorrecto"}
     
   tamaño =letra.length;
-  if tamaño > 1;
+  if (tamaño > 1);{
     return console.log("ingresaste un cadena con letras mayor a una, dato incorrecto")
   
+}
 }
 
 // No modificar nada debajo de esta línea
