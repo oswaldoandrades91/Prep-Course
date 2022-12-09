@@ -35,35 +35,52 @@ const {
   esVocal,
 } = require('../homework.js');
 
-describe('nuevaString', function() {
-  it('Deberia ser un string', function() {
-    expect(typeof nuevaString).toBe('string');
-  });
-});
+//describe('nuevaString', function() {
+  //it('Deberia ser un string', 
+  function(nuevastring) {
+   // expect(typeof nuevaString).toBe('string');
+    nuevastring='string';
+    return nuevastring 
+  };
+;
 
 describe('nuevoNum', function() {
-  it('Deberia ser un numero', function() {
-    expect(typeof nuevoNum).toBe('number');
+  it('Deberia ser un numero', 
+  function(nuevoNum) {
+   // expect(typeof nuevoNum).toBe('number');
+   nuevoNum=1;
+   return nuevoNum
+
   });
 });
 
-describe('nuevoBool', function() {
-  it('Deberia ser un booleano', function() {
+//describe('nuevoBool', function() {
+  //it('Deberia ser un booleano', function() {
     expect(typeof nuevoBool).toBe('boolean');
-  });
-});
+    function(nuevobool) {
+      nuevobool=true;
+      return nuevobool
+  };
 
-describe('nuevaResta', function() {
-  it('Deberia ser un booleano', function() {
-    expect(nuevaResta).toBe(true);
-  });
-});
 
-describe('nuevaMultiplicacion', function() {
-  it('Deberia ser un booleano', function() {
-    expect(nuevaMultiplicacion).toBe(true);
-  });
-});
+//describe('nuevaResta', function() 
+  //it('Deberia ser un booleano', function() {
+   // expect(nuevaResta).toBe(true);
+   function(nuevaresta) {
+    nuevaresta=true;
+    return nuevaResta
+  };
+
+
+//describe('nuevaMultiplicacion', function() {
+  //it('Deberia ser un booleano', function() {
+   //
+  // expect(nuevaMultiplicacion).toBe(true);
+    function(nuevaMultiplicacion) {
+      nuevaMultiplicacion = true;
+      return nuevaMultiplicacion
+  };
+
 
 describe('nuevoModulo', function() {
   it('Deberia ser un booleano', function() {
@@ -75,49 +92,83 @@ describe('devolverString(str)', function() {
   it('Deberia devolver el string provisto', function() {
     let string = 'Henry';
     expect(devolverString(string)).toBe(string);
+    function(str) {
+      let string ='henry'
+      return string;
   });
 });
 
-describe('suma(x, y)', function() {
-  it('Deberia devolver la suma de los dos argumentos', function() {
-    expect(suma(5, 5)).toBe(10);
-    expect(suma(-1, 5)).toBe(4);
-  });
-});
+//describe('suma(x, y)', function() {
+ // it('Deberia devolver la suma de los dos argumentos', 
+  function  suma(x,y) {
+    //expect(suma(5, 5)).toBe(10);
+   //expect(suma(-1, 5)).toBe(4);
+   z=(x+x);
+   w=(x+y)
+   return {z,w};
+   
+  };
+;
+suma(5,-1)
 
-describe('resta(x, y)', function() {
-  it('Deberia devolver la diferencia de los dos argumentos', function() {
-    expect(resta(5, 5)).toBe(0);
-    expect(resta(-1, 5)).toBe(-6);
-    expect(resta(5, -5)).toBe(10);
-    expect(resta(0, 0)).toBe(0);
-  });
-});
+//describe('resta(x, y)', function() {
+  it('Deberia devolver la diferencia de los dos argumentos', 
+  function resta(x,y) {
+   // expect(resta(5, 5)).toBe(0);
+    //expect(resta(-1, 5)).toBe(-6);
+    //expect(resta(5, -5)).toBe(10);
+   // expect(resta(0, 0)).toBe(0);
+   z=(x-x);
+   w=(y-x);
+   o=(x-(-x));
+   p=(0-0);
+   return {z,w,o,p};
+  };
+resta(5,-1);
 
-describe('divide(x, y)', function() {
-  it('Deberia devolver la division de los dos argumentos', function() {
-    expect(divide(5, 5)).toBe(1);
-    expect(divide(10, 5)).toBe(2);
-    expect(divide(11, 2)).toBe(5.5);
-  });
-});
+//describe('divide(x, y)', function() {
+ // it('Deberia devolver la division de los dos argumentos',#
+   function divide(x,y) {
+   // expect(divide(5, 5)).toBe(1);
+   // expect(divide(10, 5)).toBe(2);
+   // expect(divide(11, 2)).toBe(5.5);
+   z=(x/x);
+   w=(y/x);
+   o=(y+1)/(x*2/5);
+   return {z,w,o};
+   }
 
-describe('multiplica(x, y)', function() {
-  it('Deberia devolver el producto de los dos argumentos', function() {
-    expect(multiplica(5, 5)).toBe(25);
-    expect(multiplica(10, -5)).toBe(-50);
-    expect(multiplica(11, 0)).toBe(0);
-  });
-});
+divide(5,10)
+
+//describe('multiplica(x, y)', function() {
+ //it('Deberia devolver el producto de los dos argumentos', 
+  function multiplica(x,y) {
+    //expect(multiplica(5, 5)).toBe(25);
+    //expect(multiplica(10, -5)).toBe(-50);
+    //expect(multiplica(11, 0)).toBe(0);
+    z=(x*x);
+    w=(y*(-x));
+    o=(y+1)*(0);
+    return {z,w,o};
+    }
+multiplica(5,10)  
 
 
-describe('sonIguales(x, y)', function() {
-  it('Deberia devolver true si los argumentos son iguales y sino false', function() {
-    expect(sonIguales(15, 15)).toBe(true);
-    expect(sonIguales(90, 50)).toBe(false);
-    expect(sonIguales('test', 'test')).toBe(true);
-  });
-});
+
+//describe('sonIguales(x, y)', function() {
+  //it('Deberia devolver true si los argumentos son iguales y sino false',
+function soniguales(x,y) {
+  z=(x===x);
+  w=(y===x);
+  o=('test'==='test');
+  return {z,w,o};
+  }
+       //expect(sonIguales(15, 15)).toBe(true);
+    //expect(sonIguales(90, 50)).toBe(false);
+    //expect(sonIguales('test', 'test')).toBe(true);
+
+sonIguales(15,90)
+
 
 describe('tienenMismaLongitud(str1, str2)', function() {
   it('Deberia devolver true si los strings tienen la misma longitud y sino false', function() {
