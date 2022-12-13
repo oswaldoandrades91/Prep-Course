@@ -20,6 +20,12 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if (edad>18) {
+    return "Allowed"
+    
+  } else {
+    return "Not allowed"
+  }
 }
   
 function conection(status) {
@@ -28,6 +34,14 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  if (status ===1) {
+    return "Online"
+    
+  }if (status===2) {
+    return "Away"
+  } else {
+    return "Offline"
+  }
 }
 
 function saludo(idioma) {
@@ -37,6 +51,16 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  if (idioma==="aleman") {
+    return "Guten Tag!"
+  }if(idioma==="mandarin"){
+    return "Ni Hao!"
+
+  }if(idioma==="ingles"){
+  return "Hello"
+  } else {
+    return "hola"
+  }
 }
 
 function colors(color) {
@@ -47,6 +71,17 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  if (color=="red") {
+    return "This is red"
+  }if(color==="geen"){
+    return "This is green"
+
+  }if(color==="orange"){
+  return "This is orange"
+  } else {
+    return "Color not found"
+  }
+
 }
 
 function esDiezOCinco(numero) {
